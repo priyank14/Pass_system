@@ -1,0 +1,41 @@
+{
+	"particles":{
+		"number":{
+			"value":250
+		},
+		"color":{
+			"value":"#fff"
+		},
+		"shape":{
+			"type":"circle"
+		},
+		"opacity":{
+			"value":0.7
+		},
+		"size":{
+			"value":5
+		},
+		"line_linked":{
+			"enable":false
+		},
+		"move":{
+			"enable":true,
+			"speed":2,
+			"direction":"bottom-right"
+		}
+	},
+	"interactivity":{
+		"events":{
+			"onhover":{
+				"enable":true,
+				"mode": "repulse"
+			}
+		},
+		"modes":{
+			"repulse":{
+				"distance": 50,
+        "duration": 0.4
+			}
+		}
+	}
+}
