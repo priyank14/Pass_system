@@ -7,15 +7,14 @@ if (!isset($_SESSION['username'])) {
 	}
   $username=$_SESSION['username'];
 
-	$result=mysqli_query($con,"SELECT * FROM members")or die("This is f");
-if($result === FALSE) {
-    die(mysql_error());
-}
+// 	$result=mysqli_query($con,"SELECT * FROM members")or die("This is f");
+// if($result === FALSE) {
+//     die(mysql_error());
+// }
 
- $query=mysqli_query($con,"SELECT * FROM admin WHERE username='$username'")or die("Error");
+ $query=mysqli_query($con,"SELECT * FROM admin WHERE name='$username'")or die("Error");
  $result=mysqli_fetch_array($query);
  $temp_pass=$result['password'];
-
 
 ?>
 

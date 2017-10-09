@@ -14,7 +14,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		header("Location: update.php?err=0");
 		die();
 	}
-	$query=mysqli_query($con,"UPDATE admin SET username='$user',password='$password' WHERE username='$username'");
+	$query=mysqli_query($con,"UPDATE admin SET name='$user',password='$password' WHERE name='$username'");
 
 	session_unset('username');
 	session_destroy();

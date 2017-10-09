@@ -81,7 +81,7 @@ if($result === FALSE) {
                         Employee number  :  $emp_number <br>
                         From  :  $time <br>
                         Validity  :  $validity month <br>
-                        <img src='qr/qrcode.php?text=http://localhost/it/dev/home.php?uid=$uid' alt='QR Code'>
+                        <img src='qr/qrcode.php?text=http://localhost/dbms/dev/home.php?uid=$uid' alt='QR Code'>
                         </div>
                         <div class='col-md-4'>
                         <img src='./upload/$image1' class='img-thumbnail'><img></div></div><hr>";

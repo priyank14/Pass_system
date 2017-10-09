@@ -15,7 +15,6 @@ if ($_GET['emp']) {
 		$result=mysqli_fetch_array($query1);
 		$email=$result['email'];
 		echo "$email";
-
 		$query=mysqli_query($con,"UPDATE admin_req SET status='set' WHERE emp_no=$emp")or die("Problem");
 		// if ($query) {
 		// 	header("Location: request.php");

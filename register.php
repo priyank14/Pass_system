@@ -36,9 +36,11 @@ if(isset($_POST['reg_btn'])){
 
     $errors= count($error_array);
     if ($errors==0) {
-      $reg_query=mysqli_query($con,"INSERT INTO users VALUES ('','$emp_no','$emp_fname','$emp_lname','$password','$gender','unset','','unset','no')")or die("Some prob");
+      $reg_query=mysqli_query($con,"INSERT INTO users VALUES ('$emp_no','$emp_fname','$emp_lname','$password','$gender','unset','0','unset','no')")or die($con->error);
       if ($reg_query) {
-        echo "<script>swal('Congratulations!', 'Registration Successful', 'success');</script>";
+        echo "<script>swal('Congratulations!', 'Registration Successful', 'success');
+
+        </script>";
       }else {
         die("Reg unsuccesfull");
       }

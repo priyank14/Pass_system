@@ -110,10 +110,10 @@ if (!isset($_SESSION['username'])) {
 
 <script>
 function delFunction(p1) {
-   window.location.href = "http://localhost/it/dev/del_func.php?emp="+p1;
+   window.location.href = "http://localhost/dbms/dev/del_func.php?emp="+p1;
 }
 function addFunction(p1) {
-   window.location.href = "http://localhost/it/dev/add_func.php?emp="+p1;
+   window.location.href = "http://localhost/dbms/dev/add_func.php?emp="+p1;
 }
 
 </script>

@@ -7,7 +7,7 @@ require('../connect.php');
 	    $username=$_POST['username'];
 	 	$password=$_POST['password'];
 	 	$uid=$_POST['uid'];
-	 	$query=mysqli_query($con, "SELECT * FROM admin WHERE username='$username'AND password='$password'");
+	 	$query=mysqli_query($con, "SELECT * FROM admin WHERE name='$username'AND password='$password'");
 	    $num_rows = mysqli_num_rows($query);
 	    if($num_rows > 0) {
 	      session_start();
