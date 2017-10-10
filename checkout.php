@@ -15,18 +15,18 @@ curl_setopt($ch, CURLOPT_HEADER, FALSE);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
 curl_setopt($ch, CURLOPT_HTTPHEADER,
-            array("X-Api-Key:96501c01d04c2811669f85afdc1b87c8",
-                  "X-Auth-Token:a6c248658cf1612c4d593e1e3cf5ac95"));
+            array("",
+                  ""));
 $payload = Array(
     'purpose' => 'Swimming Pool Pass ',
     'amount' => $sum,
-    'phone' => '9566214475',
+    'phone' => '',
     'buyer_name' => $row3['emp_fname'].$row3['emp_lname'],
     'redirect_url' => 'http://localhost/dbms/redirect.php',
     'send_email' => FALSE,
     'webhook' => '',
     'send_sms' => true,
-    'email' => 'priyank22259@gmail.com',
+    'email' => '',
     'allow_repeated_payments' => false
 );
 curl_setopt($ch, CURLOPT_POST, true);
